@@ -57,11 +57,15 @@
     "@dcloudio/uni-stat": "^2.0.0-alpha-30120201223002",
     "@vue/shared": "^3.0.0",
     "core-js": "^3.6.5",
+    "eslint-config-168": "^0.1.1",
     "flyio": "^0.6.2",
+    "less": "^4.0.0",
+    "less-loader": "^7.2.0",
+    "postcss-upx": "^1.0.3",
     "regenerator-runtime": "^0.12.1",
     "vue": "^2.6.11",
     "vue-class-component": "^6.3.2",
-    "vue-property-decorator": "^8.0.0",
+    "vue-property-decorator": "^8.5.1",
     "vuex": "^3.2.0"
   },
   "devDependencies": {

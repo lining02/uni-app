@@ -1,7 +1,10 @@
-const path = require('path')
+const path = require('path') 
 module.exports = {
   parser: require('postcss-comment'),
   plugins: [
+    require('postcss-upx')({
+      size: 375
+    }),
     require('postcss-import')({
       resolve (id, basedir, importOptions) {
         if (id.startsWith('~@/')) {

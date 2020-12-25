@@ -1,50 +1,36 @@
 <template>
-	<view class="content">
-        <image class="logo" src="../../static/logo.png"></image>
-		<view>
-            <text class="title">{{title}}</text>
-        </view>
-	</view>
+    <div class="content">
+        <div class="item" @click="to('/tool/triangle')">
+            三角形
+        </div>
+    </div>
 </template>
 
 <script lang="ts">
-    import Vue from 'vue';
-	export default Vue.extend({
-		data() {
-			return {
-				title: 'Hello'
-			}
-		},
-		onLoad() {
-
-		},
-		methods: {
-
-		}
-	});
+import Vue from 'vue'
+export default Vue.extend({
+    data() {
+        return {
+            title: 'Hello'
+        }
+    },
+    onLoad() {},
+    methods: {
+        to(url: string) {
+            uni.navigateTo({ url })
+        }
+    }
+})
 </script>
 
 <style>
-	.content {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-	}
+.content {
+    padding: 0 16px;
+}
 
-	.logo {
-		height: 200rpx;
-		width: 200rpx;
-		margin: 200rpx auto 50rpx auto;
-	}
-
-	.text-area {
-		display: flex;
-		justify-content: center;
-	}
-
-	.title {
-		font-size: 36rpx;
-		color: #8f8f94;
-	}
+.item {
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 1px solid #ebedf0;
+}
 </style>
