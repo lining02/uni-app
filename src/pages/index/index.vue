@@ -3,6 +3,9 @@
         <div class="item" @click="to('/tool/triangle')">
             三角形
         </div>
+        <div class="item" @click="to('/tool/qrcode')">
+            二维码
+        </div>
     </div>
 </template>
 

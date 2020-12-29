@@ -16,6 +16,12 @@
 			  "style": {
 				"navigationBarTitleText": "三角形"
 			  }
+			},
+			{
+				"path": "qrcode",
+				"style": {
+				  "navigationBarTitleText": "二维码"
+				}
 			}
 		  ]
 		}

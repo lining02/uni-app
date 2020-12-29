@@ -177,17 +177,17 @@ export default class Triangle extends Vue {
         height: 40px;
         line-height: 40px;
         border-bottom: 1px solid #ebedf0;
+        .lable {
+            width: 80px;
+            text-align: justify;
+            i {
+                display: inline-block;
+                width: 78px;
+            }
+        }
     }
 }
 
-.lable {
-    width: 80px;
-    text-align: justify;
-    i {
-        display: inline-block;
-        width: 78px;
-    }
-}
 input {
     margin: 10px 0 0 10px;
 }
